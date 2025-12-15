@@ -9,11 +9,7 @@ To visit the website, you must run the server on your own machine and visit loca
 - Ensure you have [NodeJS](https://nodejs.org/en) installed on your machine
 - Navigate to the main project directory, and in your terminal, run
 ```bash
-# install dependencies
-npm install
-
-# run the app
-npm start
+node server.js
 ```
 - In your browser, navigate to "localhost:8000"
 
@@ -50,3 +46,4 @@ In the global scoreboard display, every user's singular high score matching the 
 #### Personal Display
 
 To view the personal scoreboard display, a username must be entered in the username field at the top of the scoreboard modal. Once a username is entered, every game that the specified user has played matching the selected settings will be displayed, sorted by score (descending).
+
