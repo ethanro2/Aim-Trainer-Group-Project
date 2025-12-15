@@ -1,0 +1,62 @@
+[
+  {
+    "username": "Owen",
+    "score": 1,
+    "time": 10,
+    "difficulty": "Easy"
+  },
+  {
+    "username": "Owen",
+    "score": 0,
+    "time": 10,
+    "difficulty": "Easy"
+  },
+  {
+    "username": "Owen",
+    "score": 8,
+    "time": 10,
+    "difficulty": "Easy"
+  },
+  {
+    "username": "Owen 2",
+    "score": 21,
+    "time": 20,
+    "difficulty": "Medium"
+  },
+  {
+    "username": "Owen 2",
+    "score": 9,
+    "time": 10,
+    "difficulty": "Easy"
+  },
+  {
+    "username": "Owen 2",
+    "score": 15,
+    "time": 10,
+    "difficulty": "Easy"
+  },
+  {
+    "username": "A_Coal-ton",
+    "score": 12,
+    "time": 10,
+    "difficulty": "Easy"
+  },
+  {
+    "username": "A_Coal-ton",
+    "score": 9,
+    "time": 10,
+    "difficulty": "Medium"
+  },
+  {
+    "username": "ethan1",
+    "score": 5,
+    "time": 10,
+    "difficulty": "Hard"
+  },
+  {
+    "username": "ethan1",
+    "score": 8,
+    "time": 10,
+    "difficulty": "Hard"
+  }
+]
