@@ -1,0 +1,42 @@
+<div class="scoreboard-modal modal hidden" id="scoreboard-modal">
+
+  <h1 class="modal-header">Scoreboard</h1>
+
+  <hr/>
+
+  <button id="close-scoreboard-button" class="play-button">X</button>
+
+  <input type="text" id="scoreboard-username-input" placeholder="Username"/>
+
+  <div id="scoreboard-display-type-buttons">
+    <button id="personal-button" class="styled-button">Personal</button>
+    <button id="global-button" class="styled-button selected-scoreboard-type">Global</button>
+  </div>
+
+  <div id="scoreboard-filters-container">
+    <div id="scoreboard-time-filter-container">
+      <label for="timer-filter">Time:</label>
+      <select class="timer-input" id="selected-scoreboard-time" name="filter-time">
+        <option>10</option>
+        <option>20</option>
+        <option>30</option>
+      </select>
+    </div>
+
+    <div id="scoreboard-difficulty-filter-container">
+    <label for="filter-difficulty">Difficulty:</label>
+      <select class="difficulty-input" id="selected-scoreboard-difficulty" name="filter-difficulty">
+        <option>Easy</option>
+        <option>Medium</option>
+        <option>Hard</option>
+      </select>
+    </div>
+
+    <button class="styled-button" id="scoreboard-filter-button">Filter</button>
+  </div>
+
+  <div id="scoreboard-list-container">
+    <!-- Contents rendered on client-side -->
+  </div>
+
+</div>

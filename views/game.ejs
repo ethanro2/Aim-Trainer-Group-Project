@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aim Trainer</title>
+
+    <script src="scoreboardRowEntryTemplate.js" defer></script>
+
+    <link href="game.css" rel="stylesheet"/>
+    <script src="game.js" defer></script>
+    <script src="https://kit.fontawesome.com/a703955e87.js" crossorigin="anonymous"></script> <!-- This line is a link to a bunch of icons that I used --> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="header">
+
+      <h2 id="timer">Timer:<span class="header-number" id="timer-number">30</span></h2>
+      <h2 id="counter">Score:<span class="header-number" id="counter-number">30</span></h2>
+
+      <div id="right-header-items">
+        <button id="end-game-button" class="styled-button">End Game</button>
+        <button id="gear-icon"><i class="fa-solid fa-gear"></i></button>
+      </div>
+
+    </div>
+
+    <div id="game-window">
+      <button id="start-round" class="start-round-button">Click to begin</button>
+    </div>
+
+    <div id="end-modal-backdrop" class="hidden"></div>
+    
+    <div class="game-end-modal modal hidden" id="game-end-modal">
+      <div class="end-modal-container">
+        <h1>Your score is </h1>
+        <h2 id = "final-score" class="final-score"></h2>
+        <button id="save-score-button" class="styled-button">Save Score</button>
+        <div id="game-end-modal-middle-buttons">
+          <button id="play-again" class="end-button styled-button">Play Again</button>
+          <button id="open-settings" class="end-button styled-button">Change Settings</button>
+        </div>
+        <button id="view-scoreboard-button" class="styled-button">View Scoreboard</button>
+      </div>
+    </div>
+
+    <div id="save-score-modal-backdrop" class="hidden"></div>
+
+    <div class="modal hidden" id="save-score-modal">
+      <label for="username-input">Username:</label>
+      <input type="text" id="username-input" name="username-input">
+      <div class="save-score-buttons">
+        <button id="submit-save-score" class="styled-button">Save</button>
+        <button id="cancel-save-score" class="styled-button">Cancel</button>
+      </div>
+    </div>
+    
+    <%- include("partials/scoreboardModal", scoreData) %>
+
+    <div class="settings-modal modal hidden" id="settings-modal">
+      <h1 class="modal-header">Settings</h1>
+      <hr/>
+      <div id="settings-list-container">
+        <div id="difficulty-setting-container" class="settings-section">
+          <label class="settings-label" for="difficulty-setting">Difficulty:</label>
+          <select id="difficulty-selection" class="settings-selection" name="difficulty-setting">
+            <option>Easy</option>
+            <option>Medium</option>
+            <option>Hard</option>
+          </select>
+        </div>
+        <div id="time-setting-container" class="settings-section">
+          <label class="settings-label" for="time-setting">Time:</label>
+          <select id="time-selection" class="settings-selection" name="time-setting">
+            <option>10</option>
+            <option>20</option>
+            <option>30</option>
+          </select>
+        </div>
+        <div id="color-setting-container" class="settings-section">
+          <label class ="settings-label" for= "color-setting">Color</label>
+          <select id = "color-selection" class = "settings-selection" name = "color-setting">
+            <option>Default</option>
+            <option>Red</option>
+            <option>Green</option>
+            <option>Blue</option>
+            <option>Black</option>
+            <option>White</option>
+            <option>Orange</option>
+          </select>
+        </div>
+      </div>
+      <button id="apply-settings-button" class="styled-button">Apply Changes</button>
+    </div>
+
+  </body>
+</html>
